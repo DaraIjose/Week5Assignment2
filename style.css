@@ -1,0 +1,123 @@
+body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(backgroundimages/bg-intro-desktop.png);
+    background-size: auto;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+.container {
+    /* width: 50%; */
+    width: 60vw;
+    height: 60vh;
+    margin: 150px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    grid-auto-rows: 75px auto;
+    grid-template-areas:
+      "____ sec1"                 
+      "sec2 sec3";
+    grid-column-gap: 280px; 
+    align-content: center;
+    align-items: center;
+    justify-content: center; 
+    
+}
+.sec-1 {
+    grid-area: sec1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    
+}
+.button1 {
+    border-radius: 10px;
+    background-color:hsl(257, 36%, 49%);
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+}
+
+.sec-2 {
+    grid-area: sec2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+    width: 180%;
+}
+.learn {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.sec-3 {
+    grid-area: sec3;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 60px; 
+}
+.button2 {
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    padding: 14px 40px;
+    color: white;
+    font-size: 12px;
+    width: 100%;
+}
+input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid lightgray;
+
+}
+.footer {
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+    font-weight: 300;
+}
+
+@media (max-width: 760px) {
+    body {
+        background-image: url("backgroundimages/bg-intro-mobile.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: auto;
+    }
+
+    .container {
+        /* padding: 20px;
+        align-content: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        height: 70vh;
+    }
+
+    .sec-1 {
+        order: 2;
+    }
+
+    .sec-2 {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        order: 1;
+    }
+
+    .sec-3 {
+        order: 3;
+        margin-top: 25px;
+    }
+
+    .button1 {
+        margin-top: 60px;
+        padding: 40px;
+        width: 100%;
+    }
+}
