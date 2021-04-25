@@ -104,8 +104,8 @@ input {
         order: 2;
     }
 
-    h1{
-        font-size: 15px;
+    .learn{
+        font-size: 30px;
     }
 
     .sec-2 {
@@ -120,9 +120,13 @@ input {
         margin-top: 25px;
     }
 
+    .see {
+        font-size: 15px;
+    }
+
     .button1 {
         margin-top: 60px;
-        padding: 40px;
+        padding: 30px;
         width: 100%;
     }
 }
