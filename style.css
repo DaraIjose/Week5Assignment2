@@ -56,7 +56,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
     border-radius: 10px;
-    padding: 30px 60px; 
+    padding: 30px 30px; 
 }
 .button2 {
     border-radius: 5px;
@@ -96,11 +96,16 @@ input {
         flex-direction: column;
         align-items: center;
         align-content: center;
-        height: 70vh;
+        height: 80vh;
+        width: 70vw;
     }
 
     .sec-1 {
         order: 2;
+    }
+
+    h1{
+        font-size: 15px;
     }
 
     .sec-2 {
